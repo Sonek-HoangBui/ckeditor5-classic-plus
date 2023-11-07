@@ -47,6 +47,7 @@ import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleu
 import LinkImage from '@ckeditor/ckeditor5-link/src/linkimage';
 import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize';
 import FindAndReplace from '@ckeditor/ckeditor5-find-and-replace/src/findandreplace';
+import HtmlEmbed from '@ckeditor/ckeditor5-html-embed/src/htmlembed';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -90,7 +91,8 @@ ClassicEditor.builtinPlugins = [
     CodeBlock,
     HorizontalLine,
     SimpleUploadAdapter,
-	FindAndReplace
+	FindAndReplace,
+	HtmlEmbed,
 ];
 
 // Editor configuration.
@@ -131,7 +133,8 @@ ClassicEditor.defaultConfig = {
 			'|',
 			'undo',
 			'redo',
-			'findAndReplace'
+			'findAndReplace',
+			'htmlEmbed'
 		],
         shouldNotGroupWhenFull: true
 	},
